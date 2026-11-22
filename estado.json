@@ -1,0 +1,37 @@
+{
+  "_instrucciones": [
+    "JSON no admite comentarios de verdad, así que esta clave '_instrucciones' es la forma de dejar notas aquí mismo. La página la ignora por completo: no la borres, pero tampoco afecta nada si la dejas.",
+    "",
+    "ESTADOS POSIBLES para cada servicio en 'services':",
+    "  operational  = Operativo (verde)",
+    "  degraded     = Rendimiento degradado (ámbar)",
+    "  down         = Caído (rojo)",
+    "  maintenance  = Mantenimiento programado (azul)",
+    "",
+    "Cualquier otro valor, o un servicio que falte aquí, se muestra como 'Sin datos' (gris).",
+    "",
+    "CÓMO AGREGAR UN INCIDENTE: agrega un objeto dentro del arreglo 'incidents' (más abajo), con este formato exacto:",
+    "  { \"date\": \"21 nov 2026, 5:00 p.m.\", \"title\": \"Título corto del incidente\", \"desc\": \"Qué pasó y cómo se resolvió (o que sigue en curso).\" }",
+    "Si hay más de uno, sepáralos con coma. El más reciente va primero.",
+    "Bórralo del arreglo cuando ya no quieras que se siga mostrando.",
+    "",
+    "No olvides actualizar 'last_updated' cada vez que cambies algo."
+  ],
+
+  "last_updated": "21 de noviembre de 2026, 5:00 p.m.",
+
+  "services": {
+    "plataforma": "operational",
+    "gps": "operational",
+    "mapas": "operational",
+    "push_android": "operational",
+    "push_ios": "operational",
+    "sms": "operational",
+    "email": "operational",
+    "comandos": "operational",
+    "central": "operational"
+  },
+
+  "incidents": [
+  ]
+}
