@@ -10,8 +10,7 @@
     "",
     "Cualquier otro valor, o un servicio que falte aquí, se muestra como 'Sin datos' (gris).",
     "",
-    "CÓMO AGREGAR UN INCIDENTE: agrega un objeto dentro del arreglo 'incidents' (más abajo), con este formato exacto:",
-    "  { \"date\": \"21 nov 2026, 5:00 p.m.\", \"title\": \"Título corto del incidente\", \"desc\": \"Qué pasó y cómo se resolvió (o que sigue en curso).\" }",
+    "CÓMO AGREGAR UN INCIDENTE: agrega un objeto dentro del arreglo 'incidents' (más abajo). Las comillas van SIN barra invertida delante, así: { \"date\": \"21 nov 2026, 5:00 p.m.\", \"title\": \"Título corto\", \"desc\": \"Qué pasó.\" }",
     "Si hay más de uno, sepáralos con coma. El más reciente va primero.",
     "Bórralo del arreglo cuando ya no quieras que se siga mostrando.",
     "",
@@ -26,12 +25,17 @@
     "mapas": "operational",
     "push_android": "operational",
     "push_ios": "operational",
-    "sms": "operational",
+    "sms": "degraded",
     "email": "operational",
     "comandos": "operational",
     "central": "operational"
   },
 
   "incidents": [
+    {
+      "date": "21 nov 2026, 5:00 p.m.",
+      "title": "Retrasos en el envío de SMS",
+      "desc": "El operador móvil reporta algunos retrasos en el envío de mensajería de texto."
+    }
   ]
 }
